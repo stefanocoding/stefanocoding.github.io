@@ -1,115 +1,117 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Stefano Vettorazzi</title>
-  <style>
-    div {
-      margin: 0;
-      padding: 0;
-      top: 0;
-      bottom: 0;
+  <style type="text/css">
+    body {
+      background-color: #afffff;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 5px;
     }
-    div#canciones {
-      background-color: yellow;
+    .box {
+      display: flex;
+      flex-wrap: wrap;
     }
-    div#inversiones {
+    .item {
+      margin: 5px;
+      width: 290px;
+      height: 290px;
+      border-radius: 10px;
+      background-position: center;
+      background-size: auto 290px;
+    }
+    .box.columna {
+      flex-direction: column;
+    }
+    .box.categoria {
+      align-items: center;
+      align-self: flex-start; 
       background-color: black;
+      padding-left: 5px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      border-top-color: white;
+      border-top-width: 2px;
+      border-top-style: solid;
     }
-    html, body {
-      margin: 0;
+    .categoria .gif {
+      width: 50px;
+      height: 50px;
+      background-position: center;
+      background-size: auto 50px;
     }
-    * {
-      text-align: center;
-      font-family: monospace;
+    .categoria .titulo {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+      font-family: sans-serif;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .box.cosas {
+      margin-left: 8px;
+      margin-right: 8px;
     }
-    li {
-      padding-bottom: 5px;
-    }
-    h1 {
-      margin: 0;
-      padding-top: 8px;
-      font-size: 3em;
-    }
-    img {
-      max-width: 100%;
+    .canciones .item {
+      background-size: auto 300px;
     }
   </style>
 </head>
 <body>
-  <div id='canciones'>
-    <ul>
-      <li>
-        <h1>🎧</h1>
-      </li>
-      <li>
-        <a href='https://open.spotify.com/album/5B56QIjYaVydm6UeEVgxzv?si=fIVDt3omSoqw88ba64K_Tw'>
-          <img src='como_dolio.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://open.spotify.com/album/1b7laWXtWBbFxpDnxFBVGr?si=gxxyZXedRem8XKoVesrnog'>
-          <img src='estar_contigo.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://open.spotify.com/album/7FC1Q1QhEQmqV1r6LhnPRa?si=nH1FDzeWSE6rWYykwPfpew'>
-          <img src='un_punto_azul.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://open.spotify.com/album/3HV6sQkaHcoSGkgJhMUBJu?si=kw-IVWWtRq2HzWB0GMrP2A'>
-          <img src='una_parte_de_mi.jpg'>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id='inversiones'>
-    <ul>
-      <li>
-        <h1>💸</h1>
-      </li>
-      <li>
-        <a href='https://hackernoon.com/'>
-          <img src='hackernoon.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://www.hemster.co/'>
-          <img src='hemster.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://www.hotelsbyday.com/'>
-          <img src='hotelsbyday.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://www.70millionjobs.com/'>
-          <img src='70millionjobs.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://www.ganaz.com/'>
-          <img src='ganaz.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://www.tryjetpack.com/'>
-          <img src='jetpack.jpg'>
-        </a>
-      </li>
-      <li>
-        <a href='https://www.bogobrush.com/'>
-          <img src='bogobrush.jpg'>
-        </a>
-      </li>
-    </ul>
+  <div class='box columna'>
+    <div class='box categoria'>
+      <div class='gif' style='background-image: url("https://media.giphy.com/media/oMTxxvgdr3wt2/200w_d.gif")'></div>
+      <div class='titulo'>
+      Canciones
+      </div>
+    </div>
+    <div class='box cosas canciones'>
+      <a class='item' style='background-image: url("como_dolio.jpg")'
+        href='https://open.spotify.com/album/5B56QIjYaVydm6UeEVgxzv?si=fIVDt3omSoqw88ba64K_Tw'></a>
+      <a class='item' style='background-image: url("estar_contigo.jpg")'
+        href='https://open.spotify.com/album/1b7laWXtWBbFxpDnxFBVGr?si=gxxyZXedRem8XKoVesrnog'></a>
+      <a class='item' style='background-image: url("un_punto_azul.jpg")'
+        href='https://open.spotify.com/album/7FC1Q1QhEQmqV1r6LhnPRa?si=nH1FDzeWSE6rWYykwPfpew'></a>
+      <a class='item' style='background-image: url("una_parte_de_mi.jpg")'
+        href='https://open.spotify.com/album/3HV6sQkaHcoSGkgJhMUBJu?si=kw-IVWWtRq2HzWB0GMrP2A'></a>
+    </div>
+    <div class='box categoria'>
+      <div class='gif' style='background-image: url("https://media.giphy.com/media/JLELwGi2ksYTu/200w_d.gif")'></div>
+      <div class='titulo'>
+      Inversiones
+      </div>
+    </div>
+    <div class='box cosas'>
+      <a class='item' style='background-image: url("jumpstart.jpg")'
+        href='https://www.jumpstartrecovery.com/'></a>
+      <a class='item' style='background-image: url("billion_vegans.jpg")'
+        href='https://billionvegans.com/'></a>
+      <a class='item' style='background-image: url("venomyx_therapeutics.jpg")'
+        href='https://www.venomyx.com/'></a>
+      <a class='item' style='background-image: url("element_farms.jpg")'
+        href='https://www.element-farms.com/'></a>
+      <a class='item' style='background-image: url("petit_vour.jpg")'
+        href='https://www.petitvour.com/'></a>
+      <a class='item' style='background-image: url("lavabit.jpg")'
+        href='https://lavabit.com/'></a>
+      <a class='item' style='background-image: url("the_phluid_project.jpg")'
+        href='https://thephluidproject.com/'></a>
+      <a class='item' style='background-image: url("hackernoon.jpg")'
+        href='https://hackernoon.com/'></a>
+      <a class='item' style='background-image: url("hemster.jpg")'
+        href='https://www.hemster.co/'></a>
+      <a class='item' style='background-image: url("hotelsbyday.jpg")'
+        href='https://www.hotelsbyday.com/'></a>
+      <a class='item' style='background-image: url("70millionjobs.jpg")'
+        href='https://www.70millionjobs.com/'></a>
+      <a class='item' style='background-image: url("ganaz.jpg")'
+        href='https://www.ganaz.com/'></a>
+      <a class='item' style='background-image: url("jetpack.jpg")'
+        href='https://www.tryjetpack.com/'></a>
+      <a class='item' style='background-image: url("bogobrush.jpg")'
+        href='https://www.bogobrush.com/'></a>
+    </div>
   </div>
 </body>
 </html>
