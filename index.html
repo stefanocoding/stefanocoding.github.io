@@ -58,17 +58,38 @@
     .canciones .item {
       background-size: auto 300px;
     }
+    .box.descripcion {
+      align-self: flex-start;
+      background-color: white;
+      font-size: 1.2em;
+      font-family: monospace;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      border-radius: 10px;
+    }
+    .descripcion .texto {
+      padding: 10px;
+
+    }
   </style>
 </head>
 <body>
   <div class='box columna'>
-    <!-- 
-      Looking for content related to bug bounty? :-D
-      Maybe some of the content available at https://gist.github.com/stefanocoding is useful to you. 
-      Also, my disclosed reports are available at https://hackerone.com/stefanofinding.
-    -->
+    <div class='box descripcion'>
+      <div class='texto'>
+      Hola, mi nombre es Stefano. 
+      <br>
+      En esta página listo la mayoría de las cosas en las que invierto mi tiempo y dinero. 
+      <br>
+      Soy <a href='https://twitter.com/stefanohablando'>@stefanohablando</a> en Twitter, si querés comunicarte conmigo. 
+      </div>
+    </div>
     <div class='box categoria'>
-      <div class='gif' style='background-image: url("https://media.giphy.com/media/oMTxxvgdr3wt2/200w_d.gif")'></div>
+      <a href='https://giphy.com/gifs/oMTxxvgdr3wt2'>
+        <div class='gif' style='background-image: url("https://media.giphy.com/media/oMTxxvgdr3wt2/200w_d.gif")'></div>
+      </a>
       <div class='titulo'>
       Canciones
       </div>
@@ -89,6 +110,45 @@
       <a class='item' style='background-image: url("una_parte_de_mi.jpg")'
         href='https://open.spotify.com/album/3HV6sQkaHcoSGkgJhMUBJu?si=kw-IVWWtRq2HzWB0GMrP2A'></a>
     </div>
+    <div class='box categoria'>
+      <a href='https://giphy.com/gifs/DMwWJvT0uwZgc'>
+        <div class='gif' style='background-image: url("https://media.giphy.com/media/DMwWJvT0uwZgc/200w_d.gif")'></div>
+      <!-- <div class='gif' style='background-image: url("https://media.giphy.com/media/YFkpsHWCsNUUo/200w_d.gif")'></div> -->
+      </a>
+      <div class='titulo'>
+      Aplicaciones
+      </div>
+    </div>
+    <div class='box cosas'>
+      <a class='item' style='background-image: url("okforvegans.jpg")'
+        href='https://okforvegans.com/'></a>
+    </div>
+    <div class='box categoria'>
+      <a href='https://giphy.com/gifs/YAnpMSHcurJVS'>
+        <div class='gif' style='background-image: url("https://media.giphy.com/media/YAnpMSHcurJVS/200w_d.gif")'></div>
+      </a>
+      <div class='titulo'>
+      Bug hunting
+      </div>
+    </div>
+    <div class='box cosas'>
+      <a class='item' style='background-image: url("hackerone.jpg")'
+        href='https://hackerone.com/stefanofinding'></a>
+      <a class='item' style='background-image: url("bugcrowd.jpg")'
+        href='https://bugcrowd.com/stefanofinding'></a>
+    </div>
+    <!-- <div class='box categoria'>
+      <a href='https://giphy.com/gifs/JLELwGi2ksYTu'>
+        <div class='gif' style='background-image: url("https://media.giphy.com/media/JLELwGi2ksYTu/200w_d.gif")'></div>
+      </a>
+      <div class='titulo'>
+      Crowdfunding investing
+      </div>
+    </div>
+    <div class='box cosas'>
+      <a class='item' style='background-image: url("a_veces.jpg")'
+        href='https://okforvegans.com/'></a>
+    </div> -->
   </div>
 </body>
 </html>
