@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escuchar &quot;calma&quot; - Stefano Vettorazzi</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style type='text/css'>
+    body {
+      background-color: #afffff;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 5px;
+    }
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box.columna {
+      flex-direction: column;
+    }
+    .box.cosas {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+    .box.descripcion {
+      align-self: flex-start;
+      background-color: white;
+      font-size: 1.2em;
+      font-family: monospace;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      border-radius: 10px;
+    }
+    .descripcion .texto {
+      padding: 10px;
+
+    }
+    .servicios .item {
+      margin: 5px;
+      width: 290px;
+      border-radius: 10px;
+      background-position: center;
+      background-size: auto 290px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-decoration: none;
+      flex-grow: 1;
+    }
+    .servicios .item.spotify {
+      color: #ffffff;
+      background-color: #1DB954;
+    }
+    .servicios .item.youtube {
+      color: #ffffff;
+      background-color: #ff0000;
+    }
+    .servicios .item.amazon_music {
+      color: #ffffff;
+      background-color: #000000;
+    }
+    .servicios .item.apple_music {
+      color: #000000;
+      background-color: #ffffff;
+    }
+    .servicios .item:hover {
+      text-decoration: underline;
+    }
+    .servicios .item:active {
+      text-decoration: none;
+    }
+    .fondo {
+      background-image: url("calma.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: fixed;
+      z-index: -1;
+      height: 110%;
+      width: 110%;
+      left: -5%;
+      top: -5%;
+      margin: 0;
+      filter: blur(4px);
+    }
+  </style>
+</head>
+<body>
+  <div class='fondo'></div>
+  <div class='box columna'>
+    <div class='box descripcion'>
+      <div class='texto'>
+      <strong>calma</strong> est&aacute; disponible para escuchar en casi todos lados. 
+      <br>
+      Cada enlace/bot&oacute;n que aparece ac&aacute; te lleva a la canci&oacute;n en ese servicio. 
+      </div>
+    </div>
+    <div class='box cosas servicios'>
+        <a class='item spotify'
+          href='https://open.spotify.com/album/3Y0bI2hZYShbFOq9NDRqPx?si=C9C2jdjoTHKWZDImzWJWlA'>SPOTIFY</a>
+        <a class='item youtube'
+          href='https://www.youtube.com/watch?v=JCStCm9coQY'>YOUTUBE</a>
+        <a class='item amazon_music'
+          href='https://music.amazon.com/albums/B0BJ122S18'>AMAZON MUSIC</a>
+        <a class='item apple_music'
+          href='https://music.apple.com/uy/album/calma-single/1649616047'>APPLE MUSIC</a>
+    </div>
+  </div>
+</body>
+</html>
